@@ -1,15 +1,13 @@
-# Latex Template for master/phd 
-## York University, Toronto, Canada
-
-Last update: November 2018. 
+# Latex Template for master/phd @ York University
+York University, Toronto, Canada
 
 This is a Latex class file that satisifies the organization and technical Requirements of a [masters/phd](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/) thesis set out by Faculty of Graduate Studies, York University. 
 
 ### Download
 Download the `.cls` file in the same folder you are working in (or install it system-wide if you have the technical skills to do so). 
+See the `thesis.tex` file for a minimal working example. 
 
 ### Settings
-See the `thesis.tex` file for a minimal working example. 
 
 **Information**
 ```
