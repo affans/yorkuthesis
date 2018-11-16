@@ -63,3 +63,5 @@ letterpaper,12pt,oneside,onecolumn,final,openany
 ```
 These options are propagated through the rest of packages. 
 
+I will likely not be maintaining this when I graduate. PRs are always welcome. Alternatively, fork it and make your own. 
+
