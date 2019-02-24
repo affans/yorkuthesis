@@ -7,6 +7,9 @@ This is a Latex class file that satisifies the organization and technical Requir
 Download the `.cls` file in the same folder you are working in (or install it system-wide if you have the technical skills to do so). 
 See the `thesis.tex` file for a minimal working example. 
 
+#### Before we begin, if you are running TexLive 2018 on Mac/Linux, make sure to update.
+`sudo tlmgr update --self` followed by `sudo tlmgr update --all`. I did this and it fixed quite a few bugs for me. 
+
 ### Settings
 
 **Information**
