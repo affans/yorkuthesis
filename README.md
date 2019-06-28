@@ -1,7 +1,9 @@
 # Latex Template for master/phd @ York University
 York University, Toronto, Canada
 
-This is a Latex class file that satisifies the organization and technical Requirements of a [masters/phd](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/) thesis set out by Faculty of Graduate Studies, York University. 
+This is a Latex class file that satisifies the organization and technical Requirements of a [masters/phd](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/) thesis set out by Faculty of Graduate Studies, York University. This is not officially endorsed by York University or FGS. I will likely not be maintaining this when I graduate (October 2019). PRs are always welcome. Alternatively, fork it and make your own. 
+
+## Instructions on how to use this template below. 
 
 ### Download
 Download the `.cls` file in the same folder you are working in (or install it system-wide if you have the technical skills to do so). 
@@ -66,5 +68,4 @@ letterpaper,12pt,oneside,onecolumn,final,openany
 ```
 These options are propagated through the rest of packages. 
 
-I will likely not be maintaining this when I graduate. PRs are always welcome. Alternatively, fork it and make your own. 
 
