@@ -17,7 +17,7 @@ For Windows/MikTex, you can use the console (installed with your distribution) t
 
 ### Problems with bibliography and references. 
 I find that many people can't get the citations to work. This is likely because you are using the wrong bibliography engine. There are two engines to read and process bib files. 
-- **Biber**/**BibLatex**: Newer engine and what this template uses (i.e. I use the `biber` commands to print the bibliography, mainly the functions 
+- **Biber**/**BibLatex**: Newer engine and what this template uses i.e. I use the `biber` commands to print the bibliography, mainly the functions 
 ```
     \usepackage{biblatex}
     \addbibresource{filename.bib}
@@ -25,7 +25,7 @@ I find that many people can't get the citations to work. This is likely because 
 ```
 - **BibTex**: This is the old engine. It uses the commands `\bibliography` and `\bibliographystyle`. Do not use `\bibliography` or `\bibliographystyle` as they belong to BibTeX.
 
-When building the document, the chain of commands to properly compile should be: pdflatex -> biber -> pdflatex -> pdflatex. That is, run pdflatex first, run biber next, and run pdflatex again. Again, make sure that it is using biber.exe in that middle step (look at the status bar/log of your program). **The default chain of commands in many software is pdflatex -> bibtex -> pdflatex** which will NOT work! 
+When building the document, the chain of commands to properly compile should be: `pdflatex -> biber -> pdflatex -> pdflatex`. That is, run `pdflatex` first, run `biber` next, and run `pdflatex again`. Again, make sure that it is using `biber` in that middle step (look at the status bar/log of your program). **The default chain of commands in many software is `pdflatex -> bibtex -> pdflatex`** which will NOT work! 
 
 If your software is using `bibtex` instead of `biber`, you'll have to change the setting. This step is different based on the software you are using. In general, look for "build" options (for texmaker, see image below)
 
