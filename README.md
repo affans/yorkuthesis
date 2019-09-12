@@ -3,6 +3,8 @@ York University, Toronto, Canada
 
 This is a Latex class file that satisifies the organization and technical Requirements of a [masters/phd](http://gradstudies.yorku.ca/current-students/thesis-dissertation/organization/) thesis set out by Faculty of Graduate Studies, York University. This is not officially endorsed by York University or FGS. I will likely not be maintaining this when I graduate (October 2019). PRs are always welcome. Alternatively, fork it and make your own. 
 
+It should compile easily with minimal modifications. I find that some folks have trouble with the references part. I have addressed this below. Please read the instructions. 
+
 ## Instructions 
 
 ### Download
@@ -11,6 +13,24 @@ See the `thesis.tex` file for a minimal working example.
 
 #### Before we begin, if you are running TexLive 2018 on Mac/Linux, make sure to update.
 `sudo tlmgr update --self` followed by `sudo tlmgr update --all`. I did this and it fixed quite a few bugs for me. 
+For Windows/MikTex, you can use the console (installed with your distribution) to update the packages. 
+
+### Problems with bibliography and references. 
+I find that many people can't get the citations to work. This is likely because you are using the wrong bibliography engine. There are two engines to read and process bib files. 
+- **Biber**/**BibLatex**: Newer engine and what this template uses (i.e. I use the `biber` commands to print the bibliography, mainly the functions 
+```
+    \usepackage{biblatex}
+    \addbibresource{filename.bib}
+    \printbibliography
+```
+- **BibTex**: This is the old engine. It uses the commands `\bibliography` and `\bibliographystyle`. Do not use `\bibliography` or `\bibliographystyle` as they belong to BibTeX.
+
+When building the document, the chain of commands to properly compile should be: pdflatex -> biber -> pdflatex -> pdflatex. That is, run pdflatex first, run biber next, and run pdflatex again. Again, make sure that it is using biber.exe in that middle step (look at the status bar/log of your program). **The default chain of commands in many software is pdflatex -> bibtex -> pdflatex** which will NOT work! 
+
+If your software is using `bibtex` instead of `biber`, you'll have to change the setting. This step is different based on the software you are using. In general, look for "build" options (for texmaker, see image below)
+
+![alt text](https://i.stack.imgur.com/ZiXAJ.jpg "TexMaker")
+
 
 ### Settings
 
